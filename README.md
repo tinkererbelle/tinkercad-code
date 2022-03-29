@@ -9,22 +9,20 @@ float time, distance;
 
 void setup() 
 {
-    lcd.begin(16, 2); // LCD size
-    pinMode(trigPin, OUTPUT);
-    pinMode(echoPin, INPUT);
+   lcd.begin(16, 2); // LCD size
+   pinMode(trigPin, OUTPUT);
+   pinMode(echoPin, INPUT);
 
-      pinMode(10, OUTPUT);//LEDs 
-      pinMode(9, OUTPUT);
-     pinMode(8, OUTPUT);
+   pinMode(10, OUTPUT);//LEDs 
+   pinMode(9, OUTPUT);
+   pinMode(8, OUTPUT);
 
-      pinMode(13, OUTPUT);//Piezo
+   pinMode(13, OUTPUT);//Piezo
 
-    Serial.begin(9600);
-
+   Serial.begin(9600);
 }
 
-void loop() 
-{
+void loop() {
 digitalWrite(trigPin, LOW);
     delay(200);
 digitalWrite(trigPin, HIGH);
